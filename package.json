@@ -1,0 +1,64 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "build_dev": "vite build --mode development",
+    "build_prod": "vite build --mode production",
+    "build_stg": "vite build --mode staging",
+    "build_audit": "vite build --mode audit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueup/vue-quill": "^1.2.0",
+    "@vueuse/core": "^10.10.0",
+    "axios": "^1.6.8",
+    "core-js": "3.35.1",
+    "crypto-js": "^4.2.0",
+    "dompurify": "^3.1.7",
+    "pinia": "^2.1.7",
+    "quill-blot-formatter": "^1.0.5",
+    "vue": "3.4.8",
+    "vue-google-charts": "^1.1.0",
+    "vue-router": "^4.0.3",
+    "vue3-toastify": "^0.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.23.7",
+    "@babel/eslint-parser": "7.23.3",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/vue-router": "^2.0.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "5.0.8",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "7.32.0",
+    "eslint-plugin-vue": "8.7.1",
+    "vite": "^5.2.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
